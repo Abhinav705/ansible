@@ -1,13 +1,13 @@
-- name: Installing and run ngnix
+- name: Installing and run nginx
   hosts: web
   become: yes #root access
   tasks:
-  - name: install ngnix
+  - name: install nginx
     ansible.builtin.dnf:
-      name: ngnix
+      name: nginx
       state: latest
   - name: start nginx
     ansible.builtin.service:
-      name: ngnix
+      name: nginx
       state: started
       enabled: yes

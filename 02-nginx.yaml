@@ -2,7 +2,7 @@
   hosts: web
   become: yes #root access
   tasks:
-  - name: Install ngnix
+  - name: install ngnix
     ansible.builtin.dnf:
       name: ngnix
       state: latest

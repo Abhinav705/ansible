@@ -11,7 +11,7 @@
       msg: "User Info: {{USER}}"
   
   - name: Add the user if it doesn't exist
-    ansible.builtin.command: useradd expense
+    ansible.builtin.command: sudo useradd expense
     when: USER.rc !=0
   
   - name: Say Hello

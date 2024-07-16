@@ -9,5 +9,5 @@
     private: true
   tasks:
   - name: Vars from command prompt
-    ansible.inbuilt.debug:
+    ansible.builtin.debug:
       msg: "Username is {{USERNAME}} and Password is {{PASSWORD}}"

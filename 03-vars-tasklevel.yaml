@@ -1,5 +1,8 @@
 - name: Variables from task level
   hosts: localhost
+  vars:
+    course: "Terraform"
+    Trainer: "ABC"
   tasks:
   - name: Vars from task level
     vars:
